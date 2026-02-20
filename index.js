@@ -12,7 +12,7 @@ app.use(express.json());
 
 const PORT =process.env.PORT||4000;
 connectDB();
-app.use('/api',recRouter)
+app.use('/api/',recRouter)
 app.listen(PORT,()=>{
     console.log(`Server is Running on port:${PORT}`);
 })

@@ -23,7 +23,7 @@ export const getRecipeDetails = async(req,res)=>{
 
 }
 
-export const getRecipeById = async(req,res)=>{
+export const RecipeById = async(req,res)=>{
     try{
   const reciId = req.params.id;
   const recipe=await Recipe.findById(reciId);
@@ -74,12 +74,11 @@ export const updateRecipeById = async (req, res) => {
       return res.status(404).json({ message: "Recipe not found" });
     }
 
-
     res.status(200).json({ data: updatedRecipe });
 
   } catch (error) {
     console.log(error);
-    res.status(200).json({ message: "Server error" });
+    res.status(200).json({ message: "Recipe is found" });
   }
 };
 

@@ -4,14 +4,16 @@ Recipe API A simple REST API built using Node.js, Express, MongoDB, and Mongoose
 
 http://localhost:4000
 
-📌 API Endpoints 🔹 Create Recipe POST /recipes
+📌 API Endpoints 
+🔹 [Create Recipe POST /](https://backend-task-r3x1.onrender.com/api/create-recipe)
 
-🔹 Get All Recipes GET /recipes
+🔹 Get All Recipes GET /(https://backend-task-r3x1.onrender.com/api/get-recidetails)
 
-🔹 Get Recipe By ID GET /recipes/:id
+🔹 [Get Recipe By ID GET /](https://backend-task-r3x1.onrender.com/api/get-recidetails/69969cf241f3a878cc1ba23a)(
 
-🔹 Update Recipe PUT /recipes/:id
+[🔹 Update Recipe PUT /:id](https://backend-task-r3x1.onrender.com/api/edit-recipe/69969cf241f3a878cc1ba23a)
 
-🔹 Delete Recipe DELETE /recipes/:id
+[🔹 Delete Recipe DELETE /](https://backend-task-r3x1.onrender.com/api/delete-recipe/69969ce141f3a878cc1ba238)
 
-🧾 Sample JSON { "title": "Chicken Biryani", "ingredient": "Chicken, Rice, Onion, Tomato, Spices", "instructions": "Cook chicken. Add rice. Mix spices. Cook well.", "cookingTime": "45 minutes" }
+🧾 Sample JSON 
+{ "title": "Chicken Biryani", "ingredient": "Chicken, Rice, Onion, Tomato, Spices", "instructions": "Cook chicken. Add rice. Mix spices. Cook well.", "cookingTime": "45 minutes" }

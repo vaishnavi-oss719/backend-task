@@ -14,6 +14,21 @@ http://localhost:4000
 🔹 Update Recipe PUT /:id(https://backend-task-r3x1.onrender.com/api/edit-recipe/69969cf241f3a878cc1ba23a)
 
 🔹 Delete Recipe DELETE /(https://backend-task-r3x1.onrender.com/api/delete-recipe/69969ce141f3a878cc1ba238)
+     put https://backend-task-r3x1.onrender.com/api/edit-recipe/69969cf241f3a878cc1ba23a
+
+     output
+
+     
+    "data": {
+        "_id": "69969cf241f3a878cc1ba23a",
+        "title": "Fruit Salad",
+        "ingredients": "Apple, Banana, Mango, Grapes, Honey",
+        "instructions": "Cut all fruits and mix with honey.",
+        "cookingTime": 9,
+        "__v": 0
+    }
+}
+
 
 🧾 Sample JSON 
 { "title": "Chicken Biryani", "ingredient": "Chicken, Rice, Onion, Tomato, Spices", "instructions": "Cook chicken. Add rice. Mix spices. Cook well.", "cookingTime": "45 minutes" }

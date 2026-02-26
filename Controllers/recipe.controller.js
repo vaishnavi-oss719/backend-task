@@ -39,34 +39,16 @@ export const RecipeById = async(req,res)=>{
 }
 
 
-// export const updateRecipeById = async(req,res) => {
-//     try{
-//       const id=req.params.id;
-      
-//       const {ingredient,instructions,cookingTime}=req.body;
-//       const result=await Recipe.findByIdAndUpdate({id},{ingredient,instructions,cookingTime})
-//       console.log(result);
-//       if(result.matchedCount===0){
-//         return res.status(404).json({mesaage:"Recipe not Found"})
-//       }
-//       const updateRec = await Recipe.find({id});
-//       res.status(200).json({data:updateRec})
-//     }
-//     catch(error){
-// console.log(error)
-//     };
-
-// }
 
 export const updateRecipeById = async (req, res) => {
   try {
     const id = req.params.id;
 
-    const {ingredient, instructions, cookingTime } = req.body;
+    const {title ,ingredient, instructions, cookingTime } = req.body;
 
     const updatedRecipe = await Recipe.findByIdAndUpdate(
       id,  
-      { ingredient, instructions, cookingTime },
+      { title ,ingredient, instructions, cookingTime },
       { new: true }  
     );
 
